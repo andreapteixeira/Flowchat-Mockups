@@ -625,31 +625,6 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                      </td>
                                                 </tr>
 
-                                                <tr class="kt-datatable__row border-bottom default-audience" style="left: 0px;">
-                                                    <td data-field="logged_profiles" aria-label="logged_profiles" class="kt-datatable__cell p-2 font-weight-bold">
-                                                        <span style="width: 100%;">
-                                                            <span ><i class="fab fa-tiktok color-tiktok mt-n1 mr-2"></i> Jack Reacher
-                                                        </span>
-                                                    </td>
-                                                    <td data-field="updated" aria-label="updated" class="kt-datatable__cell p-2 text-right">
-                                                        <span >
-                                                            <span> Logged at: 2024-10-10 23:16</span>
-                                                        </span>
-                                                     </td>
-                                                </tr>
-
-                                                <tr class="kt-datatable__row border-bottom default-audience" style="left: 0px;">
-                                                    <td data-field="logged_profiles" aria-label="logged_profiles" class="kt-datatable__cell p-2 font-weight-bold">
-                                                        <span style="width: 100%;">
-                                                            <span ><i class="fab fa-instagram color-instagram mt-n1 mr-2"></i> Jack Reacher
-                                                        </span>
-                                                    </td>
-                                                    <td data-field="updated" aria-label="updated" class="kt-datatable__cell p-2 text-right">
-                                                        <span >
-                                                            <span> Logged at: 2024-10-10 23:16</span>
-                                                        </span>
-                                                     </td>
-                                                </tr>
 
                                             </tbody>
                                         </table>
@@ -660,6 +635,17 @@ License: You must have a valid license purchased only from https://themes.getboo
                             </div>
                         </div>
                         <div class="kt-portlet kt-portlet--mobile">
+                            <div class="kt-portlet__head kt-portlet__head--lg">
+                                    <div class="kt-portlet__head-label">
+                                        <h3 class="kt-portlet__head-title">Pipelines with Stage Automation</h3>
+                                    </div>
+                                    <div class="kt-portlet__head-toolbar">
+                                        <div class="kt-portlet__head-wrapper">
+                                            <button type="button" class="btn btn-outline-info d-none"><i class="far fa-list-alt"></i> Scheduled Automations Log</button>
+                                            <button type="button" class="btn btn-danger" onclick="MUAutomationQueue.disableALlAutomationQueue()"><i class="fas fa-toggle-off"></i> Disable All Scheduled Automations</button>
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="kt-portlet__body">
                                         <div class="accordion queue-pipeline my-2" id="queuePipeline1">
                                                     <div class="card">
@@ -713,7 +699,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                                 <div class="col-lg-2 text-lg-center">
                                                                     <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0 my-1" data-toggle="modal" data-target="#scheduleAutomation"><i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                                     <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads my-1" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads my-1" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                                 </div>
                                                             </div>
                                                             <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1">
@@ -744,7 +730,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                                     <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                         <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                                     <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                                 </div>
                                                             </div>
                                                             <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1">
@@ -775,7 +761,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                                     <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                         <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                                     <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                                 </div>
                                                             </div>
                                                             <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -806,7 +792,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                                     <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                         <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                                     <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                                 </div>
                                                             </div>
                                                             <div class="card-body row m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -837,7 +823,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                                     <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                         <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                                     <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                                    <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -896,7 +882,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -927,7 +913,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -958,7 +944,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -989,7 +975,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1020,7 +1006,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1079,7 +1065,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1110,7 +1096,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1141,7 +1127,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1172,7 +1158,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1203,7 +1189,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1256,7 +1242,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row border-bottom m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1">
@@ -1284,7 +1270,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                     <div class="card-body row m-0 queue-row d-flex align-items-center py-3 pl-0 py-lg-1 queue-disabled">
@@ -1312,15 +1298,11 @@ License: You must have a valid license purchased only from https://themes.getboo
                                                             <button class="btn  btn-sm btn-outline-info btn-icon btn-icon-sm ml-3 ml-lg-0" data-toggle="modal" data-target="#scheduleAutomation">
                                                                 <i class="flaticon2-edit" data-toggle="kt-tooltip" title="" data-original-title="Edit"></i></button>
                                                             <button type="button" class="btn  btn-sm btn-outline-danger ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-play"></i> Run Now</button>
-                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""><i class="fas fa-clipboard-list"></i> Log</button>
+                                                            <button type="button" class="btn  btn-sm btn-outline-secondary ml-3 ml-lg-1 run-automations-auto-process-leads" id=""  data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Log</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="text-right mt-3">
-                                            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#resultsModal"><i class="fas fa-clipboard-list"></i> Scheduled Automations Log</button>
-                                            <button type="button" class="btn btn-danger"><i class="fas fa-toggle-off"></i> Disable All Scheduled Automations</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1429,7 +1411,7 @@ License: You must have a valid license purchased only from https://themes.getboo
                 </div>
                 <!-- begin::Modal Results -->
                 <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-dialog modal-dialog-scrollable modal-md">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="resultsModalLabel">Automation Queue Log</h5>
@@ -1438,119 +1420,59 @@ License: You must have a valid license purchased only from https://themes.getboo
                                 </button>
                             </div>
                             <div class="modal-body">
+                                
                                 <div class="accordion queue-pipeline my-2" id="queueResults1">
                                     <div class="card">
-                                        <div class="card-header" id="queueResults1Heading" style="background: #5867dd45;">
-                                            <div class="card-title text-dark" data-toggle="collapse" data-target="#queueResults1Collapse" aria-expanded="true" aria-controls="queueResults1Collapse">
+                                        <div class="card-header" id="queueResults1Heading">
+                                            <div class="card-title text-dark collapsed" data-toggle="collapse" data-target="#queueResults1Collapse" aria-expanded="false" aria-controls="queueResults1Collapse" style="font-size: 1rem;">
                                                 <i class="fas fa-caret-down fa-lg"></i>
                                                 <div class="d-inline-block w-100">
-                                                    <b>Pipeline:</b> FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</br>
-                                                    <b class="">Stage:</b> Qualified Prospects
-                                                    <div class="float-right"><b>Ran at:</b> September 26, 2024 at 22:20</div>
+                                                    <div class=""><b>Run: </b>17/10/2024, 12:40:32</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="queueResults1Collapse" class="collapse show p-0" aria-labelledby="headingOne" data-parent="#queueResults1" style="">
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td style="50px">Lead ID</td>
-                                                        <td>Profile</td>
-                                                        <td>Action</td>
-                                                        <td>Completed</td>
-                                                        <td>Detail</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="50px">654321</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100087654321111" target="_blank">John Doe</a></td>
-                                                        <td>Facebook: Comment on a post</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">654321</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100087654321111" target="_blank">John Doe</a></td>
-                                                        <td>Facebook: Share a post</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">654321</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100087654321111" target="_blank">John Doe</a></td>
-                                                        <td>Move to another stage</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">789123</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100076543219876" target="_blank">Jane Smith</a></td>
-                                                        <td>Facebook: Like a profile post</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">789123</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100076543219876" target="_blank">Jane Smith</a></td>
-                                                        <td>Facebook: Send a Friend Request</td>
-                                                        <td><span class="text-danger">No</span></td>
-                                                        <td>No Friend Request Button</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">789123</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100076543219876" target="_blank">Jane Smith</a></td>
-                                                        <td>Move to another stage</td>
-                                                        <td><span class="text-danger">No</span></td>
-                                                        <td>Not started</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">112233</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100065432198765" target="_blank">Alice Johnson</a></td>
-                                                        <td>Facebook: Like a profile post</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">112233</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100065432198765" target="_blank">Alice Johnson</a></td>
-                                                        <td>Facebook: Send a Friend Request</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">112233</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100065432198765" target="_blank">Alice Johnson</a></td>
-                                                        <td>Move to another stage</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">998877</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100054321098765" target="_blank">Robert Wilson</a></td>
-                                                        <td>Facebook: Like a profile post</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">998877</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100054321098765" target="_blank">Robert Wilson</a></td>
-                                                        <td>Facebook: Send a Friend Request</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="50px">998877</td>
-                                                        <td><a href="https://www.facebook.com/profile.php?id=100054321098765" target="_blank">Robert Wilson</a></td>
-                                                        <td>Move to another stage</td>
-                                                        <td><span class="text-success">Yes</span></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div id="queueResults1Collapse" class="p-3 collapse" aria-labelledby="headingOne" data-parent="#queueResults1" >
+                                            <div id="text-log"><strong>Settings:</strong><br><strong>Max Leads:</strong> 3<br><strong>Action Timeout:</strong> 30 seconds<br><strong>If Blocked:</strong> skip<br><strong>Leads Interval:</strong> 5-10 seconds<br><br>-------------------------------------<br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fb friend request<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Wait Before Start:</strong> 2 seconds<br><strong>Skip on Error:</strong> No<br><strong>Pipeline Stage ID:</strong> 106241<br><br>-------------------------------------<br><strong>Detailed Log:</strong><br><strong>Lead:</strong> Tîmmy KE (ID: 5003560)<br><strong>Profile:</strong> <a href="https://www.facebook.com/profile.php?id=61553235361006">https://www.facebook.com/profile.php?id=61553235361006</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:37<br><strong>End:</strong> 17/10/2024, 12:40:41<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:46<br><strong>End:</strong> 17/10/2024, 12:40:50<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:52<br><strong>End:</strong> 17/10/2024, 12:40:54<br><br>-------------------------------------<br><strong>Lead:</strong> KemmyAssumpta Lillian (ID: 5003576)<br><strong>Profile:</strong> <a href="https://www.facebook.com/assumpta.lilian.1">https://www.facebook.com/assumpta.lilian.1</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Detail:</strong> Action execution timed out.<br><strong>Start:</strong> 17/10/2024, 12:41:14<br><strong>End:</strong> 17/10/2024, 12:41:44<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:49<br><strong>End:</strong> 17/10/2024, 12:41:53<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:55<br><strong>End:</strong> 17/10/2024, 12:41:57<br><br>-------------------------------------<br><strong>Lead:</strong> Arlene Johnson (ID: 5003574)<br><strong>Profile:</strong> <a href="https://www.facebook.com/arlene.johnson.3958">https://www.facebook.com/arlene.johnson.3958</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:17<br><strong>End:</strong> 17/10/2024, 12:42:21<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Start:</strong> 17/10/2024, 12:42:26<br><strong>End:</strong> 17/10/2024, 12:42:30<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:32<br><strong>End:</strong> 17/10/2024, 12:42:33<br><br>-------------------------------------<br><strong>Last Run:</strong> 17/10/2024, 12:42:35<br></div>
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="accordion queue-pipeline my-2" id="queueResults2">
+                                    <div class="card">
+                                        <div class="card-header" id="queueResults2Heading">
+                                            <div class="card-title text-dark collapsed" data-toggle="collapse" data-target="#queueResults2Collapse" aria-expanded="false" aria-controls="queueResults2Collapse" style="font-size: 1rem;">
+                                                <i class="fas fa-caret-down fa-lg"></i>
+                                                <div class="d-inline-block w-100">
+                                                    <div class=""><b>Run: </b>16/10/2024, 12:40:35</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="queueResults2Collapse" class="p-3 collapse" aria-labelledby="headingOne" data-parent="#queueResults2" >
+                                            <div id="text-log"><strong>Settings:</strong><br><strong>Max Leads:</strong> 3<br><strong>Action Timeout:</strong> 30 seconds<br><strong>If Blocked:</strong> skip<br><strong>Leads Interval:</strong> 5-10 seconds<br><br>-------------------------------------<br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fb friend request<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Wait Before Start:</strong> 2 seconds<br><strong>Skip on Error:</strong> No<br><strong>Pipeline Stage ID:</strong> 106241<br><br>-------------------------------------<br><strong>Detailed Log:</strong><br><strong>Lead:</strong> Tîmmy KE (ID: 5003560)<br><strong>Profile:</strong> <a href="https://www.facebook.com/profile.php?id=61553235361006">https://www.facebook.com/profile.php?id=61553235361006</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:37<br><strong>End:</strong> 17/10/2024, 12:40:41<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:46<br><strong>End:</strong> 17/10/2024, 12:40:50<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:52<br><strong>End:</strong> 17/10/2024, 12:40:54<br><br>-------------------------------------<br><strong>Lead:</strong> KemmyAssumpta Lillian (ID: 5003576)<br><strong>Profile:</strong> <a href="https://www.facebook.com/assumpta.lilian.1">https://www.facebook.com/assumpta.lilian.1</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Detail:</strong> Action execution timed out.<br><strong>Start:</strong> 17/10/2024, 12:41:14<br><strong>End:</strong> 17/10/2024, 12:41:44<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:49<br><strong>End:</strong> 17/10/2024, 12:41:53<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:55<br><strong>End:</strong> 17/10/2024, 12:41:57<br><br>-------------------------------------<br><strong>Lead:</strong> Arlene Johnson (ID: 5003574)<br><strong>Profile:</strong> <a href="https://www.facebook.com/arlene.johnson.3958">https://www.facebook.com/arlene.johnson.3958</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:17<br><strong>End:</strong> 17/10/2024, 12:42:21<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Start:</strong> 17/10/2024, 12:42:26<br><strong>End:</strong> 17/10/2024, 12:42:30<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:32<br><strong>End:</strong> 17/10/2024, 12:42:33<br><br>-------------------------------------<br><strong>Last Run:</strong> 17/10/2024, 12:42:35<br></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion queue-pipeline my-2" id="queueResults3">
+                                    <div class="card">
+                                        <div class="card-header" id="queueResults3Heading">
+                                            <div class="card-title text-dark collapsed" data-toggle="collapse" data-target="#queueResults3Collapse" aria-expanded="false" aria-controls="queueResults3Collapse" style="font-size: 1rem;">
+                                                <i class="fas fa-caret-down fa-lg"></i>
+                                                <div class="d-inline-block w-100">
+                                                    <div class=""><b>Run: </b>15/10/2024, 12:40:23</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="queueResults3Collapse" class="p-3 collapse" aria-labelledby="headingOne" data-parent="#queueResults3" >
+                                            <div id="text-log"><strong>Settings:</strong><br><strong>Max Leads:</strong> 3<br><strong>Action Timeout:</strong> 30 seconds<br><strong>If Blocked:</strong> skip<br><strong>Leads Interval:</strong> 5-10 seconds<br><br>-------------------------------------<br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fb friend request<br><strong>Wait Before Start:</strong> 5 seconds<br><strong>Skip on Error:</strong> No<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Wait Before Start:</strong> 2 seconds<br><strong>Skip on Error:</strong> No<br><strong>Pipeline Stage ID:</strong> 106241<br><br>-------------------------------------<br><strong>Detailed Log:</strong><br><strong>Lead:</strong> Tîmmy KE (ID: 5003560)<br><strong>Profile:</strong> <a href="https://www.facebook.com/profile.php?id=61553235361006">https://www.facebook.com/profile.php?id=61553235361006</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:37<br><strong>End:</strong> 17/10/2024, 12:40:41<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:46<br><strong>End:</strong> 17/10/2024, 12:40:50<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:40:52<br><strong>End:</strong> 17/10/2024, 12:40:54<br><br>-------------------------------------<br><strong>Lead:</strong> KemmyAssumpta Lillian (ID: 5003576)<br><strong>Profile:</strong> <a href="https://www.facebook.com/assumpta.lilian.1">https://www.facebook.com/assumpta.lilian.1</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Detail:</strong> Action execution timed out.<br><strong>Start:</strong> 17/10/2024, 12:41:14<br><strong>End:</strong> 17/10/2024, 12:41:44<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:49<br><strong>End:</strong> 17/10/2024, 12:41:53<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:41:55<br><strong>End:</strong> 17/10/2024, 12:41:57<br><br>-------------------------------------<br><strong>Lead:</strong> Arlene Johnson (ID: 5003574)<br><strong>Profile:</strong> <a href="https://www.facebook.com/arlene.johnson.3958">https://www.facebook.com/arlene.johnson.3958</a><br><strong>Actions:</strong><br><strong>Action:</strong> fb like post<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:17<br><strong>End:</strong> 17/10/2024, 12:42:21<br><br><strong>Action:</strong> fb friend request<br><strong>Status:</strong> <span class="text-danger">Failed</span><br><strong>Start:</strong> 17/10/2024, 12:42:26<br><strong>End:</strong> 17/10/2024, 12:42:30<br><br><strong>Action:</strong> fc update pipeline stage<br><strong>Status:</strong> <span class="text-success">Completed</span><br><strong>Start:</strong> 17/10/2024, 12:42:32<br><strong>End:</strong> 17/10/2024, 12:42:33<br><br>-------------------------------------<br><strong>Last Run:</strong> 17/10/2024, 12:42:35<br></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
